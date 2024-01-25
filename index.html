@@ -31,13 +31,54 @@
                 <a href="#"> <img src="assets/x.png" alt="x" width="35" height="35"></a>
             </div>
 
-
         </nav>
-
-
 
     </header>
 
+    <main class="first-main">
+
+        <section class="left">
+
+            <h3>Hello, My Name is </h3>
+            <h1>Aditya </h1>
+            <h3>And I'm a <span id="element"></span> </h3>
+
+            <button class="btn">
+                <a href="https://drive.google.com/file/d/13u_OrX__DmOXcMVzPn_Y2GdUT5T9Rgd3/view?usp=drive_link"
+                    target="_blank">
+                    <span class="btn-text">Resume</span>
+                    <img class="arrow" src="assets/svg/right_arrow.svg" alt="right arrow">
+                </a>
+            </button>
+
+
+        </section>
+
+
+        <section class="right">
+
+            <!-- <img src="assets/hero-img.png" alt="hero-image"> -->
+            <div class="back-circle"></div>
+
+
+        </section>
+
+
+
+
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Enthusiast Lerner', 'Software Developer', 'Freelancer'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+
+    </script>
 </body>
 
 </html>
