@@ -173,4 +173,30 @@ h1 {
     transform: rotate(-130deg);
     position: relative;
     right: 80px;
+    box-shadow: -10px 0px 10px #2C257A;
+}
+
+.back-circle:hover {
+
+    animation: float 1s ease-in infinite alternate;
+}
+
+.hero {
+    position: relative;
+    top: 100px;
+    left: 46px;
+    transform: rotate(130deg);
+}
+
+
+
+@keyframes float {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 10px;
+    }
+
 }
