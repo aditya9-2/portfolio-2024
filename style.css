@@ -20,7 +20,7 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 
@@ -188,6 +188,46 @@ h1 {
     left: 9px;
     transform: rotate(130deg);
     width: 350px;
+}
+
+
+/* About Section */
+
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    margin-top: 50px;
+}
+
+.about-img {
+    position: relative;
+    top: 140px;
+}
+
+.about-content {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 100px;
+}
+
+.about-content h1 {
+    margin-bottom: 15px;
+}
+
+.about-content .text-blue {
+    color: #04FFF0;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.about-p {
+    font-size: 20px;
+    font-weight: 200;
 }
 
 
