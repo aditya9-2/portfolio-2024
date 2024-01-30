@@ -7,7 +7,7 @@
 }
 
 :root {
-    --background: linear-gradient(#2C257A, #000000);
+    --background: linear-gradient(to right, #2C257A, #000000);
     --text-color: #D5D5D5;
     --text-hover: #9f9a9a;
     --circle-color: #0A69C0;
@@ -16,23 +16,30 @@
 
 html,
 body {
-    background: var(--background);
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    background: var(--background);
+}
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 11;
+    background: var(--background);
 }
 
 nav {
     display: flex;
-    margin: 15px;
-    padding: 15px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-
+    box-shadow: none;
+    position: sticky;
+    margin: 0 15px;
+    padding: 15px 0;
 }
 
 .logo a {
@@ -86,10 +93,10 @@ nav ul li a:hover {
 }
 
 .container {
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 80px;
 }
 
 .left {
@@ -160,11 +167,6 @@ h1 {
 }
 
 
-.right {
-    display: flex;
-    justify-content: end;
-}
-
 .back-circle {
     height: 457px;
     width: 375px;
@@ -195,6 +197,7 @@ h1 {
 
 
 .about-container {
+    min-height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -228,6 +231,53 @@ h1 {
 .about-p {
     font-size: 20px;
     font-weight: 200;
+}
+
+/* Project-Section */
+
+.project-container {
+    min-height: 100%;
+    margin: 50px auto;
+
+}
+
+.main-text {
+    /* margin-top: 100px; */
+    margin: 180px auto 0 auto;
+    padding: 100px 0 40px 0;
+
+}
+
+.main-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.main-text .text-blue {
+    color: #04FFF0;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    place-items: center;
+}
+
+.project-box {
+    height: 300px;
+    width: 280px;
+    background-color: #2C257A;
+    border: none;
+    border-radius: 10px;
+}
+
+.project-box:hover {
+    box-shadow: 3px 3px 3px #04FFF0;
+    transition: all 0.3s ease-in-out;
 }
 
 
