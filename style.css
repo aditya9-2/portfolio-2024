@@ -100,9 +100,9 @@ nav ul li a:hover {
 }
 
 .left {
-    position: relative;
-    top: 50px;
-    left: 80px;
+    /* position: relative; */
+    /* top: 50px;
+    left: 80px; */
     min-height: 50vh;
     min-width: 40vw;
 
@@ -175,12 +175,14 @@ h1 {
     border: 3px solid #2C257A;
     transform: rotate(-130deg);
     position: relative;
-    right: 80px;
+    /* right: 80px; */
+    bottom: 70px;
     box-shadow: -10px 0px 10px #2C257A;
 }
 
 .back-circle:hover {
 
+    
     animation: float 1s ease-in infinite alternate;
 
 }
@@ -384,11 +386,11 @@ h1 {
 
 @keyframes float {
     from {
-        top: 0;
+        bottom: 70px;
     }
 
     to {
-        top: 10px;
+        bottom: 77px;
     }
 
 }
