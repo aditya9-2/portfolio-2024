@@ -97,6 +97,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    scroll-margin: 80px;
 }
 
 .left {
@@ -182,7 +183,7 @@ h1 {
 
 .back-circle:hover {
 
-    
+
     animation: float 1s ease-in infinite alternate;
 
 }
@@ -379,6 +380,97 @@ h1 {
 
 
 
+#skills-1,
+#skills-2,
+#skills-3,
+#skills-4,
+#skills-5,
+#skills-6,
+#skills-7,
+#skills-8 {
+
+    height: 200px;
+    width: 180px;
+    background-color: #2C257A;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills-1 img,
+#skills-2 img,
+#skills-3 img,
+#skills-4 img,
+#skills-5 img,
+#skills-6 img,
+#skills-7 img,
+#skills-8 img {
+
+    display: block;
+    margin: auto;
+    width: 150px;
+    border-radius: 20px;
+
+}
+
+#skills-1:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px 4px #f16529;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+
+}
+
+#skills-2:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px 4px #0277bd;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+#skills-3:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px 4px #ffd600;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+#skills-4:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px 4px #00d8ff;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+#skills-5:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px 4px #44a8b3;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+#skills-6:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px 4px #8cc84b;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+#skills-7:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px 4px #ffffff;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+#skills-8:hover {
+    cursor: pointer;
+    box-shadow: 6px 6px 4px #ffdd57;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+}
 
 
 
