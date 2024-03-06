@@ -51,6 +51,21 @@ nav {
     cursor: pointer;
 }
 
+/* .menu-toggle {
+    display: none;
+}
+
+.menu-open .nav-links {
+    display: flex;
+}
+
+.menu-open .social {
+    display: flex;
+} 
+hamburger functionality
+*/
+
+
 header>nav ul {
     display: flex;
     align-items: center;
@@ -177,12 +192,11 @@ h1 {
     transform: rotate(-130deg);
     position: relative;
     /* right: 80px; */
-    bottom: 70px;
+    bottom: 23px;
     box-shadow: -10px 0px 10px #2C257A;
 }
 
 .back-circle:hover {
-
 
     animation: float 1s ease-in infinite alternate;
 
@@ -198,8 +212,6 @@ h1 {
 
 
 /* About Section */
-
-
 .about-container {
     min-height: 100%;
     display: flex;
@@ -478,11 +490,187 @@ h1 {
 
 @keyframes float {
     from {
-        bottom: 70px;
+        bottom: 23px;
     }
 
     to {
-        bottom: 77px;
+        bottom: 32px;
     }
 
 }
+
+@media screen and (max-width:768px) {
+    .container {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .left {
+        position: relative;
+        top: 80px;
+        left: 77px;
+        min-height: 50vh;
+        min-width: 40vw;
+
+    }
+
+    .left h3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .left h1 {
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .back-circle {
+        height: 357px;
+        width: 275px;
+        background-color: var(--circle-color);
+        border-radius: 50%;
+        border: 3px solid #2C257A;
+        transform: rotate(-130deg);
+        position: relative;
+        bottom: 23px;
+        box-shadow: -10px 0px 10px #2C257A;
+    }
+
+    .hero {
+        position: relative;
+        top: 50px;
+        left: 9px;
+        transform: rotate(130deg);
+        width: 250px;
+    }
+
+    /* About */
+
+    .about-container {
+        min-height: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        /* justify-content: space-between; */
+        align-items: center;
+        padding: 0 100px;
+        margin-top: 50px;
+    }
+
+    .about-content {
+        color: white;
+        font-size: 20px;
+        /* font-weight: bold; */
+        position: relative;
+        top: 50px;
+    }
+
+    .about-img {
+        position: relative;
+        top: 120px;
+        left: 40px;
+    }
+
+    .about-content h1 {
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+
+    .about-content .text-blue {
+        color: #04FFF0;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .about-p {
+        font-size: 16px;
+        font-weight: 200;
+    }
+
+    /* Projects */
+    .project-container {
+        min-height: 100%;
+        margin: 50px auto;
+
+    }
+
+    .main-text {
+        margin: 120px auto 0 auto;
+        padding: 100px 0 40px 0;
+
+    }
+
+    .main-text h1 {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .main-text .text-blue {
+        color: #04FFF0;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        place-items: center;
+    }
+
+    .project-box {
+        height: 300px;
+        width: 280px;
+        background-color: #2C257A;
+        border: none;
+        border-radius: 10px;
+    }
+
+}
+
+/*
+hamburger CSS
+@media screen and (max-width: 370px) {
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--background);
+        padding: 10px 0;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links a {
+        color: var(--text-color);
+    }
+
+    .nav-links a:hover {
+        color: var(--text-hover);
+    }
+
+    .social {
+        display: none;
+    }
+
+    .menu-open .nav-links {
+        display: flex;
+    }
+}
+*/
