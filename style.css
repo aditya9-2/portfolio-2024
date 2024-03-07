@@ -51,7 +51,7 @@ nav {
     cursor: pointer;
 }
 
-/* .menu-toggle {
+.menu-toggle {
     display: none;
 }
 
@@ -61,9 +61,9 @@ nav {
 
 .menu-open .social {
     display: flex;
-} 
-hamburger functionality
-*/
+}
+
+/* hamburger functionality */
 
 
 header>nav ul {
@@ -499,7 +499,14 @@ h1 {
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:718px) {
+
+    .logo a {
+
+        font-size: 25px;
+    }
+
+
     .container {
 
         display: flex;
@@ -629,17 +636,18 @@ h1 {
         border-radius: 10px;
     }
 
-}
-
-/*
-hamburger CSS
-@media screen and (max-width: 370px) {
     .menu-toggle {
         display: block;
         cursor: pointer;
     }
 
-    .nav-links {
+    .hamburger img {
+        width: 35px;
+        filter: invert(1);
+    }
+
+    .nav-links,
+    .social {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -655,6 +663,7 @@ hamburger CSS
     .nav-links li {
         margin: 10px 0;
         text-align: center;
+        gap: 30px;
     }
 
     .nav-links a {
@@ -670,7 +679,137 @@ hamburger CSS
     }
 
     .menu-open .nav-links {
+        position: absolute;
+        top: 0;
         display: flex;
     }
+
 }
-*/
+
+
+/* hamburger CSS */
+@media screen and (max-width: 370px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .left {
+
+        min-height: 30vh;
+        left: 0;
+        min-width: 282px;
+        margin-bottom: 150px;
+
+    }
+
+    .left h3 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .left h1 {
+        font-size: 23px;
+        font-weight: bold;
+    }
+
+    .btn {
+        margin: 15px 0;
+        padding: 8px 8px;
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 10px;
+        background: var(--btn-color);
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .back-circle {
+        height: 257px;
+        width: 175px;
+        background-color: var(--circle-color);
+        border-radius: 50%;
+        border: 3px solid #2C257A;
+        transform: rotate(-130deg);
+        position: relative;
+        bottom: 190px;
+        box-shadow: -10px 0px 10px #2C257A;
+    }
+
+    .hero {
+        position: relative;
+        top: 50px;
+        left: 9px;
+        transform: rotate(130deg);
+        width: 150px;
+    }
+
+    .about-container {
+        min-height: 60%;
+        display: flex;
+        flex-direction: column-reverse;
+        right: 51px;
+        position: relative;
+        padding: 0px 0px 0px 83px;
+        margin-top: -120px;
+    }
+
+    .about-p {
+        text-align: justify;
+    }
+
+    .about-back-circle {
+        position: inherit;
+        left: 50px;
+        top: 2px;
+    }
+
+    /* Projects */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes float {
+        from {
+            bottom: 190px;
+        }
+
+        to {
+            bottom: 195px;
+        }
+
+    }
+
+}

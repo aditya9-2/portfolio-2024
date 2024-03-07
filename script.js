@@ -7,7 +7,7 @@ var typed = new Typed('#element', {
 });
 
 const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+const navLinks = document.querySelector('nav ul.nav-links');
 const socialLinks = document.querySelector('.social');
 
 menuToggle.addEventListener('click', () => {
